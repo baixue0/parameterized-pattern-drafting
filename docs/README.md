@@ -83,6 +83,6 @@ Each pattern piece is represented by a polygon with N vertexes and N+1 edges. Ea
 
 ## View the algorithm in Google Colab
 
-[![Open In Colab](https://github.com/baixue0/parameterized-pattern-drafting/blob/main/example.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/baixue0/parameterized-pattern-drafting/blob/main/example.ipynb)
 
 ## Future features
