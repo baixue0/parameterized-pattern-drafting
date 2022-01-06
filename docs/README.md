@@ -60,7 +60,7 @@ Given bust measurements, determine the relative coordinates of the lines in the 
 
 ## Input parameters
 
-1. underbust circumference
+* underbust circumference
 	* measure without wearing a bra
 * fullbust circumference
 	* start with a guess and try a range of values around the guess
