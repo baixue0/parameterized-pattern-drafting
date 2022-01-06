@@ -81,6 +81,8 @@ Each pattern piece is represented by a polygon with N vertexes and N+1 edges. Ea
 * Bézier curve edges: numpy array of shape `(2,2,)` or `(3,2,)`
 * A pattern piece: list of edges in clockwise order
 
-## [View the algorithm in Google Collab]()
+## View the algorithm in Google Colab
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/googlecolab/colabtools/blob/master/notebooks/colab-github-demo.ipynb)
 
 ## Future features
