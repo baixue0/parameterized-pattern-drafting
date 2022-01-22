@@ -64,6 +64,14 @@ Each pattern piece is represented by a polygon with N vertexes and N+1 edges. Ea
 <img src="anatomy3.jpg" alt="drawing" width="300"/>
 
 ## Future features
+### Create web based GUI
+
+The user interface will include
+
+* table for user to enter body measurements and other stylistic preference
+* download button for each set of parameter
+
+The goal is to make this tool accessible to people without codeing skill.
 
 ### Pattern with power bar
 
