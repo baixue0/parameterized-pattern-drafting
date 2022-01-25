@@ -38,7 +38,7 @@ The underwire is the most important component of a wired bra. There are multiple
 The shape of the wire is often available at the supplier as pdf document. I traced the wire with bezier curves in Adobe Illustrator and converted coordiates of points on the wire to a CSV table. 
 
 
-↓ check out the code
+**↓ check out the code to extract the coordinates of the wire**
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/baixue0/parameterized-pattern-drafting/blob/main/wireCoords.ipynb) 
 
@@ -57,7 +57,7 @@ The emperical pattern drafting method in the book is a sequence of geometric man
 
 Each pattern piece is represented by a polygon with N vertexes and N+1 edges. Each edge is defined by a linear or quadratic Bézier curve, created with [bezier package](https://bezier.readthedocs.io/en/stable/index.html). Most geometric computations are done using [shapely package](https://shapely.readthedocs.io/en/stable/manual.html).
 
-↓ check out the code to create pattern for this partial band bra
+**↓ check out the code to create pattern for this partial band bra**
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/baixue0/parameterized-pattern-drafting/blob/main/geometry.ipynb)
 
