@@ -29,18 +29,6 @@ To my knowledge, nobody has combined **traditional pattern drafting methods** wi
 <img src="cup.jpg" alt="drawing" width="400"/>
 
 ## Preparations before pattern drafting
-### the underwire shape
-
-The underwire is the most important component of a wired bra. There are multiple wire shapes to suit different body types. They can be tall and narrow, short and shallow, high on the sides, high at the front.  
-
-<img src="wire.png" alt="drawing" width="200"/>
-
-The shape of the wire is often available at the supplier as pdf document. I traced the wire with bezier curves in Adobe Illustrator and converted coordiates of points on the wire to a CSV table. 
-
-
-**↓ check out the code to extract the coordinates of the wire**
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/baixue0/parameterized-pattern-drafting/blob/main/wireCoords.ipynb) 
 
 ### body measurements
 <img src="measurements.jpg" alt="drawing" width="1000"/>
@@ -51,24 +39,35 @@ The shape of the wire is often available at the supplier as pdf document. I trac
 * bust height: vertical distance between underbust and overbust
 * distance between the two breasts: start with a guess and try a range of values around the guess
 
+### the underwire shape
+
+The underwire is the most important component of a wired bra. There are multiple wire shapes to suit different body types. They can be tall and narrow, short and shallow, high on the sides, high at the front.  
+
+<img src="wire.png" alt="drawing" width="200"/>
+
+The shape of the wire is often available at the supplier as pdf document. I traced the wire with bezier curves in Adobe Illustrator and converted coordiates of points on the wire to a CSV table. 
+
+
+### [example notebook to extract the coordinates of the wire](https://colab.research.google.com/github/baixue0/parameterized-pattern-drafting/blob/main/wireCoords.ipynb) 
+<img src="convert_wire.png" alt="drawing" width="200"/>
+
 ## Overview of pattern drafting using computational geometry in Python
 
 The emperical pattern drafting method in the book is a sequence of geometric manipulations. The cup pieces are based on an ellipse, whose horizontal and vertical dimensions are calculated from body measurements. The bottom part of wire is approximately a circle, whose quarter circumference defines the length of ellipse corresponding to a quarter of the finished cup. The top two ellipse quarters are often combined to construct a 3 piece cup.
 
 Each pattern piece is represented by a polygon with N vertexes and N+1 edges. Each edge is defined by a linear or quadratic Bézier curve, created with [bezier package](https://bezier.readthedocs.io/en/stable/index.html). Most geometric computations are done using [shapely package](https://shapely.readthedocs.io/en/stable/manual.html).
 
-**↓ check out the code to create pattern for this partial band bra**
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/baixue0/parameterized-pattern-drafting/blob/main/geometry.ipynb)
+## [Example notebook](https://colab.research.google.com/github/baixue0/parameterized-pattern-drafting/blob/main/geometry.ipynb)
 
 <img src="anatomy3.jpg" alt="drawing" width="300"/>
+<img src="geometry.png" alt="drawing" width="400"/>
 
 ## Future features
 ### Create web based GUI
 
 The user interface will include
 
-* table for user to enter body measurements and other stylistic preference
+* table for user to enter body measurements and other stylistic preferences
 * download button for each set of parameter
 
 The goal is to make this tool accessible to people without codeing skill.
@@ -99,4 +98,4 @@ My vision for the future is to model the breast tissue as [gel](https://en.wikip
 
 ## Contributing
 
-This project is open to contributions. 
+This project is open to contributions.
